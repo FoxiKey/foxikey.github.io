@@ -4,7 +4,8 @@
 
 **Kontakt**
 41366 Schwalmtal, Deutschland · +49 151 57871835 · [artemvolkov.it@gmail.com](mailto:artemvolkov.it@gmail.com)
-LinkedIn: linkedin.com/in/foxikey · Portfolio: drive.google.com/drive/folders/13a5iRinO9eQY78Imp1jq6ASUp6LGPHxF
+LinkedIn: linkedin.com/in/foxikey 
+· Portfolio: drive.google.com/drive/folders/13a5iRinO9eQY78Imp1jq6ASUp6LGPHxF
 
 ---
 
@@ -143,9 +144,6 @@ Siehe oben — gleiche Ordnerstruktur.
 
 ### Kontakt
 
-* Email: `REPLACE_EMAIL`
-* LinkedIn: `REPLACE_LINKEDIN`
+* Email: `artemvolkov.it@gmail.com`
+* LinkedIn: `linkedin.com/in/foxikey/`
 
----
-
-> **Replace placeholders** (`USERNAME`, `REPO`, `REPLACE_EMAIL`, `REPLACE_LINKEDIN`, `REPLACE_DRIVE_LINK`) with your actual values before publishing.
