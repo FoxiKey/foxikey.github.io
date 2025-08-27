@@ -1,9 +1,186 @@
-<!DOCTYPE html>
-<html>
-   <head> 
-       <title>Portfolio</title>
-   </head>
-   <body>
-       <p>This is my first portfolio at GitHub.</p>
-   </body>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artem Volkov — Portfolio</title>
+  <meta name="description" content="Portfolio — Artem Volkov. Master benchmark (Python), Numbers converter, Video portfolio."/>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#60a5fa;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#e6eef6;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; background:linear-gradient(180deg,var(--bg),#061023); -webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:28px auto;padding:22px;}
+    header{display:flex;gap:18px;align-items:center;margin-bottom:18px}
+    .avatar{width:96px;height:96px;border-radius:12px;overflow:hidden;flex:0 0 96px;background:linear-gradient(135deg,#112233,#0a2340)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:20px}
+    .subtitle{color:var(--muted);font-size:13px;margin-top:6px}
+    .top-actions{margin-left:auto;display:flex;gap:8px}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:8px 12px;border-radius:10px;color:var(--accent);text-decoration:none;font-weight:600;font-size:13px}
+    nav{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+    nav a{color:var(--muted);text-decoration:none;font-size:14px}
+    main{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    /* left column */
+    .card{background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:16px;border-radius:var(--radius); border:1px solid rgba(255,255,255,0.03)}
+    .section-title{font-weight:700;margin:0 0 10px 0}
+    .projects{display:grid;gap:12px}
+    .project{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:10px;background:rgba(255,255,255,0.01)}
+    .project .meta{font-size:13px;color:var(--muted)}
+    .project h4{margin:0 0 6px 0;font-size:15px}
+    .tags{font-size:12px;color:var(--accent);background:transparent;padding:4px 8px;border-radius:999px;border:1px solid rgba(96,165,250,0.14);display:inline-block}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+    /* right column */
+    aside{display:flex;flex-direction:column;gap:12px}
+    .small{font-size:13px;color:var(--muted)}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    /* responsive */
+    @media (max-width:980px){
+      main{grid-template-columns:1fr}
+      .top-actions{order:3;width:100%;justify-content:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <!-- замените profile.jpg на своё фото -->
+        <img src="profile.jpg" alt="Artem Volkov">
+      </div>
+      <div>
+        <h1>Artem Volkov</h1>
+        <div class="subtitle">Master in Computer Engineering · Python, Benchmarking, QA</div>
+        <nav>
+          <a href="#projects">Проекты</a> •
+          <a href="#videos">Видео</a> •
+          <a href="#skills">Навыки</a> •
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="top-actions">
+        <a class="btn" href="REPLACE_WITH_GITHUB_LINK" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="REPLACE_DRIVE_LINK" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT -->
+      <div>
+        <section id="about" class="card">
+          <h3 class="section-title">Коротко обо мне</h3>
+          <p class="small">
+            Я — Master (Computer Engineering / IT). Писал benchmark-tool на Python с GUI для тестирования CPU/RAM/Storage, реализовал логирование, простую проверку целостности и базовые механизмы защиты кода. Есть опыт в ручном QA (web responsive tests) и в видео-производстве — навыки, полезные для технических процессов и автоматизации.
+          </p>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:12px">
+          <h3 class="section-title">Wichtige Projekte</h3>
+          <div class="projects">
+            <article class="project">
+              <div style="flex:1">
+                <h4>Master Benchmark — Python (GUI)</h4>
+                <div class="meta">Benchmark tool с GUI для измерения CPU, RAM, storage; event-logging; базовые проверки целостности.</div>
+                <div style="margin-top:8px">
+                  <a class="tags" href="#" target="_blank">Demo</a>
+                  <a class="tags" href="#" style="margin-left:8px" target="_blank">Code (auf Anfrage)</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div style="flex:1">
+                <h4>Digits Converter — Python (GUI)</h4>
+                <div class="meta">Небольшой инструмент для конвертации между системами счисления, GUI для удобного использования.</div>
+                <div style="margin-top:8px">
+                  <a class="tags" href="#" target="_blank">Demo</a>
+                  <a class="tags" href="#" style="margin-left:8px" target="_blank">Code (auf Anfrage)</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div style="flex:1">
+                <h4>Digital Automata — C / MicroCap</h4>
+                <div class="meta">Симуляция структурного автомата; синтез операций и анализ в MicroCap.</div>
+                <div style="margin-top:8px">
+                  <a class="tags" href="#" target="_blank">Docs</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="videos" class="card" style="margin-top:12px">
+          <h3 class="section-title">Видео & Демонстрации</h3>
+          <p class="small">Короткие демонстрации GUI и видеомонтаж: все файлы в портфолио по ссылке.</p>
+          <p style="margin:8px 0">
+            <a class="btn" href="REPLACE_DRIVE_LINK" target="_blank">Открыть Portfolio</a>
+          </p>
+          <div class="small" style="margin-top:8px">Если нужно, могу предоставить приватные ссылки на GitHub-репозитории и инструкции по запуску.</div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT / SIDEBAR -->
+      <aside>
+        <div class="card contact">
+          <h4 class="section-title">Контакты</h4>
+          <div class="small">Email: <a href="mailto:REPLACE_EMAIL">REPLACE_EMAIL</a></div>
+          <div class="small">Телефон: <a href="tel:REPLACE_PHONE">REPLACE_PHONE</a></div>
+          <div style="height:8px"></div>
+          <div class="small">LinkedIn: <a href="REPLACE_LINKEDIN" target="_blank">Профиль</a></div>
+          <div class="small">GitHub: <a href="REPLACE_WITH_GITHUB_LINK" target="_blank">REPLACE_WITH_GITHUB_LINK</a></div>
+        </div>
+
+        <div class="card">
+          <h4 class="section-title">Навыки</h4>
+          <div class="skills" id="skills">
+            <span class="skill">Python</span>
+            <span class="skill">C / C++</span>
+            <span class="skill">GUI</span>
+            <span class="skill">Benchmarking</span>
+            <span class="skill">QA / Manual Testing</span>
+            <span class="skill">Kryptographie (Grundlagen)</span>
+            <span class="skill">Cisco basics</span>
+            <span class="skill">HTML / CSS (Grundkenntnisse)</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="section-title">Сертификаты (выборочно)</h4>
+          <div class="small">Coursera: Cryptography; Foundations of Cybersecurity; Network Communication; Machine Learning in Production.</div>
+          <div style="margin-top:8px"><a class="btn" href="REPLACE_DRIVE_LINK" target="_blank">Все сертификаты (PDF)</a></div>
+        </div>
+
+        <div class="card">
+          <h4 class="section-title">Образование</h4>
+          <div class="small">National University of Life and Environmental Sciences (NUBiP), Kyiv — Master (Computer Engineering / IT)</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© Artem Volkov · <a href="REPLACE_DRIVE_LINK" style="color:var(--accent)">Portfolio</a> · Code auf Anfrage</div>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
 </html>
