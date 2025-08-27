@@ -1,0 +1,5 @@
+Ошибка при сканировании файла C:/DumpStack.log: Could not open file 'C:/DumpStack.log'
+Ошибка при сканировании файла C:/DumpStack.log.tmp: Could not open file 'C:/DumpStack.log.tmp'
+Ошибка при сканировании файла C:/hiberfil.sys: Could not open file 'C:/hiberfil.sys'
+Ошибка при сканировании файла C:/pagefile.sys: Could not open file 'C:/pagefile.sys'
+Ошибка при сканировании файла C:/swapfile.sys: Could not open file 'C:/swapfile.sys'
